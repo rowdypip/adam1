@@ -1,0 +1,1 @@
+This is the informational website for AandA_fragrances, a tiktok based company founded by Adam Onufer and Adam Meherali. This Code is the intellectual property of Rowdy Piper and to a lesser extent the 2 adams. Free use is permitted as long as it doesn't harm us. 
