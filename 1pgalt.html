@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AandA Fragrances | Dark Cologne Collection</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+    :root {
+      --gold: #e8c46a;
+      --gold-bright: #f5d98c;
+      --gold-glow: rgba(245, 217, 140, 0.45);
+      --black-deep: #050608;
+      --black-soft: #0c0f14;
+      --border-strong: #e8c46a;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: var(--black-deep);
+      color: #f5f5f5;
+    }
+
+    header {
+      padding: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--black-soft);
+      border-bottom: 2px solid var(--gold);
+      box-shadow: 0 0 18px var(--gold-glow);
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      background: linear-gradient(135deg, var(--gold), var(--gold-bright));
+      -webkit-background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 12px var(--gold-glow);
+    }
+
+    nav a {
+      margin-left: 20px;
+      color: var(--gold);
+      text-decoration: none;
+      font-size: 12px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      transition: 0.25s ease;
+    }
+
+    nav a:hover {
+      color: var(--gold-bright);
+      text-shadow: 0 0 12px var(--gold-glow), 0 0 20px var(--gold-glow);
+      transform: translateY(-2px);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 32px 20px;
+    }
+
+    .section {
+      margin-bottom: 48px;
+      padding: 24px;
+      background: var(--black-soft);
+      border: 2px solid var(--gold);
+      border-radius: 12px;
+      box-shadow: 0 0 18px var(--gold-glow);
+      transition: 0.3s ease;
+    }
+
+    .section:hover {
+      box-shadow: 0 0 28px var(--gold-glow), 0 0 40px var(--gold-glow);
+      transform: translateY(-4px);
+    }
+
+    h2 {
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      margin-bottom: 16px;
+      color: var(--gold-bright);
+      text-shadow: 0 0 10px var(--gold-glow);
+    }
+
+    h3 {
+      margin-top: 20px;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--gold);
+      transition: 0.25s ease;
+      cursor: pointer;
+    }
+
+    h3:hover {
+      color: var(--gold-bright);
+      text-shadow: 0 0 10px var(--gold-glow), 0 0 16px var(--gold-glow);
+      transform: translateX(4px);
+    }
+
+    p {
+      color: #c7c7c7;
+      line-height: 1.6;
+      margin-bottom: 8px;
+    }
+
+    .order-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-bright));
+      color: #111;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 0 18px var(--gold-glow);
+      transition: 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .order-btn:hover {
+      filter: brightness(1.12);
+      box-shadow: 0 0 28px var(--gold-glow), 0 0 40px var(--gold-glow);
+      transform: translateY(-2px);
+    }
+
+    .order-btn::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 60%;
+      height: 100%;
+      background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.4),
+        transparent
+      );
+      transform: skewX(-20deg);
+      transition: 0.6s;
+    }
+
+    .order-btn:hover::after {
+      left: 140%;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--gold);
+      border-top: 2px solid var(--gold);
+      box-shadow: 0 0 18px var(--gold-glow);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">A&A</div>
+  <nav>
+    <a href="#bio">Bio</a>
+    <a href="#collection">Collection</a>
+    <a href="#order">Order</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="container">
+
+  <!-- BIO -->
+  <section class="section" id="bio">
+    <h2>About AandA Fragrances</h2>
+    <p>
+      AandA Fragrances was founded by <strong>Adam Meherali</strong> and 
+      <strong>Adam Onufer</strong>, two creators dedicated to crafting bold, 
+      dark, and expressive 3ml cologne decants. Built on passion, precision, 
+      and late-night experimentation, AandA delivers luxury vibes without 
+      luxury prices.
+    </p>
+    <p>
+      All pickups are done in person — we do not ship. No custom blends, but 
+      you can request specific fragrances for an upcharge.
+    </p>
+  </section>
+
+  <!-- SIGNATURE -->
+  <section class="section" id="signature">
+    <h2>Signature Scent</h2>
+
+    <h3>Y Eau De Parfum</h3>
+    <p>A fresh & woody fragrance with notes of Sage, Geranium, & Wood.</p>
+  </section>
+
+  <!-- COLLECTION -->
+  <section class="section" id="collection">
+    <h2>Core Collection</h2>
+
+    <h3>JPG Le Beau Le Parfum</h3>
+    <p>Le Beau Le Parfum by Jean Paul Gaultier is an Oriental Woody fragrance for men. Launched in 2022. Top notes: Pineapple, Iris, Ginger, Cypress. Middle: Coconut, Woodsy Notes. Base: Tonka Bean, Sandalwood, Amber, Ambergris.</p>
+
+    <h3>JPG Le Male Elixir</h3>
+    <p>Le Male Elixir by Jean Paul Gaultier is an Oriental Fougere fragrance for men. Launched in 2023. Top: Lavender, Mint. Middle: Vanilla, Benzoin. Base: Honey, Tonka Bean, Tobacco.</p>
+
+    <h3>Azzaro The Most Wanted Parfum</h3>
+    <p>A warm, spicy, sweet, amber fragrance with woody undertones. Opens with cardamom, moves through toffee, settles into amberwood. Strong projection and 6+ hour performance.</p>
+
+    <h3>Maison Margiela Replica By The Fireplace</h3>
+    <p>A warm & spicy unisex fragrance that evokes the cozy feeling of a winter fireplace. Launched in 2015.</p>
+
+    <h3>Nautica Voyage</h3>
+    <p>Fresh, clean, oceanic fragrance with green apple, lotus, cedar, musk, and amber. Great for warm weather, gym, and casual wear.</p>
+
+    <h3>Emporio Armani Stronger With You Intensely</h3>
+    <p>Sweet, vanilla, amber, cinnamon fragrance. Cozy winter scent with strong projection and 6+ hour performance.</p>
+
+    <h3>Valentino Born in Roma Intense</h3>
+    <p>Warm, sweet lavender with ginger sparks and a deep amber-tonka-musk drydown. Rich, sweet, and slightly powdery.</p>
+  </section>
+
+  <!-- FOR THE WOMEN -->
+  <section class="section" id="perfume">
+    <h2>For The Women</h2>
+
+    <h3>See Below</h3>
+    <p>DM Adam to ask for perfume.</p>
+  </section>
+
+  <!-- ORDER -->
+  <section class="section" id="order">
+    <h2>Place an Order</h2>
+    <p>
+      All items are <strong>3ml cologne decants</strong>.  
+      Pickup only — no shipping.  
+      No custom blends, but you may request specific fragrances (upcharge).  
+      All normal 3ml decants are $10.
+    </p>
+
+    <a class="order-btn" href="https://forms.gle/rym4Da7Rn2ydqqFk9" target="_blank">
+      Order Form
+    </a>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <h2>Contact</h2>
+    <p>All communication is done through TikTok DMs.</p>
+    <p><strong>TikTok:</strong> @AandA_fragrances</p>
+  </section>
+
+</div>
+
+<footer>
+  AandA Fragrances · Dark colognes & perfumes
+</footer>
+
+</body>
+</html>
